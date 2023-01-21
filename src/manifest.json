@@ -17,7 +17,8 @@
     "storage",
     "activeTab",
     "scripting",
-    "identity"
+    "identity", 
+    "history"
   ],
   "content_scripts": [
     {
@@ -30,7 +31,8 @@
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js", 
+    "type": "module"
   },
   "icons": {
     "16": "./src/icons/get_started16.png",
@@ -40,11 +42,11 @@
   },
   "options_page": "options.html",
   "oauth2": {
-    "client_id": "<fill-me>.apps.googleusercontent.com",
+    "client_id": "500945067774-mfdl89sv7s4g8v4qm48dhljgsvqqv8mc.apps.googleusercontent.com",
     "scopes": [
       "https://www.googleapis.com/auth/userinfo.email",
       "https://www.googleapis.com/auth/userinfo.profile"
     ]
   },
-  "key": "-----BEGIN PUBLIC KEY-----\n<fill-me>\n-----END PUBLIC KEY-----"  
+  "key": "olkkhohjhmdkkpjcjhkaafkeihladbpo"  
 }

@@ -47,3 +47,9 @@ function setPageBackgroundColor() {
     document.body.style.backgroundColor = color;
   });
 }
+
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    console.log(request.message)
+  }
+)
